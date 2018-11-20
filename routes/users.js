@@ -174,7 +174,7 @@ router.get('/questions',function (req, res) {
     if (isNaN(num) || isNaN(total)) {
       return "-";
     }
-    return total <= 0 ? "0%" : (Math.round(num / total * 10000) / 100.00)+"%";
+    return total <= 0 ? "0%" : (Math.round(num / total * 10000) / 100.00)+"分";
   }
 
   /**
@@ -194,13 +194,15 @@ router.get('/questions',function (req, res) {
       }
     });
 
+    let htmlPage = `<div>name:${req.session.user.name}</div><div>telephone:${req.session.user.telephone}</div><div>score:${score}</div>`
+
     let mailOptions = {
       from: '"yezi" <april1984417@163.com>', // sender address
       to: 'april1984417@163.com', // list of receivers
       subject: 'test', // Subject line
       // 发送text或者html格式
       // text: 'Hello world?', // plain text body
-      html: '<div>name:'+req.session.user.name+'</div><div>score:'+score+'</div>' // html body
+      html: htmlPage // html body
     };
 
     // send mail with defined transport object
@@ -217,15 +219,15 @@ router.get('/questions',function (req, res) {
       let userAnswer = req.body;
       let rightAnswerNum = 0;
 
+
+
       for(let index = 0;index < numOfQuestion -1;index++){
-        if(answer[index] === userAnswer[index]){
+        if(answer[index].toString() === userAnswer.result[index].toString()){
           rightAnswerNum++;
         }
       }
 
       let score = GetPercent(rightAnswerNum,numOfQuestion);
-      console.log("score",score);
-
 
       sendEmail(req,score);
 

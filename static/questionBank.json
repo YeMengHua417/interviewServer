@@ -1,114 +1,114 @@
 {
   "question":[
     {
-      "title":"1 what would be the output to the following code",
-      "body":"(function()){\n var array = new Array('100');\n console.log(array);console.log(array.length);\n}());",
+      "title":"1 What would be the output of following code",
+      "body":"var employeeId = '1234abe';\n(function(){\n console.log(employeeId);\nvar employeeId = '122345';\n})();",
       "answer":[
-        "undefined undefined",
-        "['100'] 1 ",
-        "[undefined*100] 100",
-        "ReferenceError: array is not defined"
-      ],
-      "rightAnswer":0
-    },
-    {
-      "title":"2 what would be the output to the following code",
-      "body":"(function()){\n var array = new Array('100');\n console.log(array);console.log(array.length);\n}());",
-      "answer":[
-        "undefined undefined",
-        "['100'] 1 ",
-        "[undefined*100] 100",
-        "ReferenceError: array is not defined"
+        "'122345'",
+        "undefined",
+        "Type Error",
+        "ReferenceError: employeeId is not defined"
       ],
       "rightAnswer":1
     },
     {
-      "title":"3 what would be the output to the following code?",
-      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "title":"what would be the output to the following code",
+      "body":"var employeeId = 'abc123';\n function foo(){\n    employeeId = '123bcd';\n    return;}());\n}foo();\nconsole.log(employeeId);\n",
       "answer":[
-        "0",
-        "1 2 3 4 ",
-        "4 4 4 4",
-        "5"
+        "undefined",
+        "'123bcd'",
+        "'abc123'",
+        "ReferenceError: employeeId is not defined"
+      ],
+      "rightAnswer":1
+    },
+    {
+      "title":"what would be the output to the following code?",
+      "body":"(function() {\n var objA = new Object({foo: \"foo\"});\n  var objB = new Object({foo: \"foo\"});\n  console.log(objA == objB);\n  console.log(objA === objB);\n}());\n",
+      "answer":[
+        "false true",
+        "false false ",
+        "true false",
+        "true true"
       ],
       "rightAnswer":2
     },
     {
-      "title":"4 what would be the output to the following code?",
-      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "title":"what would be the output to the following code?",
+      "body":"(function() {\n var array = new Array('100');\n console.log(array);\n console.log(array.length);\n}());\n",
       "answer":[
-        "0",
-        "1 2 3 4 ",
-        "4 4 4 4",
-        "5"
-      ],
-      "rightAnswer":3
-    },
-    {
-      "title":"5 what would be the output to the following code?",
-      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
-      "answer":[
-        "0",
-        "1 2 3 4 ",
-        "4 4 4 4",
-        "5"
-      ],
-      "rightAnswer":3
-    },
-    {
-      "title":"6 what would be the output to the following code?",
-      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
-      "answer":[
-        "0",
-        "1 2 3 4 ",
-        "4 4 4 4",
-        "5"
+        "undefined undefined",
+        "[undefined × 100] 100",
+        "[\"100\"] 1",
+        "ReferenceError: array is not defined "
       ],
       "rightAnswer":2
     },
     {
-      "title":"7 what would be the output to the following code?",
-      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "title":"what would be the output to the following code?",
+      "body":"(function () \n var array = new Array('a', 'b', 'c', 'd', 'e');\n  array[10] = 'f';\n  delete array[10];\nconsole.log(array.length);\n }());",
       "answer":[
-        "0",
-        "1 2 3 4 ",
-        "4 4 4 4",
-        "5"
-      ],
-      "rightAnswer":1
-    },
-    {
-      "title":"8 what would be the output to the following code?",
-      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
-      "answer":[
-        "0",
-        "1 2 3 4 ",
-        "4 4 4 4",
-        "5"
+        "11",
+        "5 ",
+        "6",
+        "undefined"
       ],
       "rightAnswer":0
     },
     {
-      "title":"9 what would be the output to the following code?",
-      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "title":"what would be the output to the following code?",
+      "body":"(function(){\n var array = [1,2,3,4,5,1,2,3,4,5,6];\n  console.log(array.indexOf(2));\n  console.log(array.indexOf(2,3));\n)console.log(array.indexOf(2,10));\n})();",
       "answer":[
-        "0",
-        "1 2 3 4 ",
-        "4 4 4 4",
-        "5"
+        "1 -1 -1",
+        "1 6 -1",
+        "1 1 -1",
+        "1 undefined undefined"
+      ],
+      "rightAnswer":2
+    },
+    {
+      "title":"what would be the output to the following code?",
+      "body":"(function(){\n var arrayNumb = [2, 8, 15, 16, 23, 42];\n  arrayNumb.sort();\n  console.log(arrayNumb);\n)})();\n",
+      "answer":[
+        "[2, 8, 15, 16, 23, 42]",
+        "[42, 23, 26, 15, 8, 2]",
+        "[ 15, 16, 2, 23, 42, 8 ]",
+        "[ 2, 8, 15, 16, 23, 42 ]"
+      ],
+      "rightAnswer":2
+    },
+    {
+      "title":"what would be the output to the following code?",
+      "body":"function myFunc() {\n console.log(arguments.length);\n}\nconsole.log(myFunc());\nconsole.log(myFunc(\"a\",\"b\"));\nconsole.log(myFunc(\"a\",\"b\",\"c\",\"d\"));",
+      "answer":[
+        "2 2 2",
+        "0 2 4",
+        "undefined",
+        "ReferenceError"
       ],
       "rightAnswer":1
     },
     {
-      "title": "10 what would be the output to the following code?",
-      "body": "for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "title":"what would be the output to the following code?",
+      "body":"function getNumber(){\n return;\n}\nvar numb = getNumber();\nconsole.log(numb);\n",
+      "answer":[
+        "null",
+        "undefined",
+        "",
+        "0"
+      ],
+      "rightAnswer":1
+    },
+    {
+      "title": "what would be the output to the following code?",
+      "body": "(function() {\n var greet = 'Hello World';\n  var toGreet = [].filter.call(greet, function(element, index) {\n     return index > 5;\n   });\n   console.log(toGreet);\n}());",
       "answer": [
-        "0",
-        "1 2 3 4 ",
-        "4 4 4 4",
-        "5"
+        "Hello World",
+        "undefined",
+        "World",
+        "[ 'W', 'o', 'r', 'l', 'd' ]"
       ],
-      "rightAnswer":1
+      "rightAnswer":3
     }
   ]
 }
