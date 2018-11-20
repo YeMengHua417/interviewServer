@@ -1,0 +1,114 @@
+{
+  "question":[
+    {
+      "title":"1 what would be the output to the following code",
+      "body":"(function()){\n var array = new Array('100');\n console.log(array);console.log(array.length);\n}());",
+      "answer":[
+        "undefined undefined",
+        "['100'] 1 ",
+        "[undefined*100] 100",
+        "ReferenceError: array is not defined"
+      ],
+      "rightAnswer":0
+    },
+    {
+      "title":"2 what would be the output to the following code",
+      "body":"(function()){\n var array = new Array('100');\n console.log(array);console.log(array.length);\n}());",
+      "answer":[
+        "undefined undefined",
+        "['100'] 1 ",
+        "[undefined*100] 100",
+        "ReferenceError: array is not defined"
+      ],
+      "rightAnswer":1
+    },
+    {
+      "title":"3 what would be the output to the following code?",
+      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "answer":[
+        "0",
+        "1 2 3 4 ",
+        "4 4 4 4",
+        "5"
+      ],
+      "rightAnswer":2
+    },
+    {
+      "title":"4 what would be the output to the following code?",
+      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "answer":[
+        "0",
+        "1 2 3 4 ",
+        "4 4 4 4",
+        "5"
+      ],
+      "rightAnswer":3
+    },
+    {
+      "title":"5 what would be the output to the following code?",
+      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "answer":[
+        "0",
+        "1 2 3 4 ",
+        "4 4 4 4",
+        "5"
+      ],
+      "rightAnswer":3
+    },
+    {
+      "title":"6 what would be the output to the following code?",
+      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "answer":[
+        "0",
+        "1 2 3 4 ",
+        "4 4 4 4",
+        "5"
+      ],
+      "rightAnswer":2
+    },
+    {
+      "title":"7 what would be the output to the following code?",
+      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "answer":[
+        "0",
+        "1 2 3 4 ",
+        "4 4 4 4",
+        "5"
+      ],
+      "rightAnswer":1
+    },
+    {
+      "title":"8 what would be the output to the following code?",
+      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "answer":[
+        "0",
+        "1 2 3 4 ",
+        "4 4 4 4",
+        "5"
+      ],
+      "rightAnswer":0
+    },
+    {
+      "title":"9 what would be the output to the following code?",
+      "body":"for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "answer":[
+        "0",
+        "1 2 3 4 ",
+        "4 4 4 4",
+        "5"
+      ],
+      "rightAnswer":1
+    },
+    {
+      "title": "10 what would be the output to the following code?",
+      "body": "for (var i = 0; i < 5; i++) {\n setTimeout(function() {\n  console.log(i);\n  }, 1000);\n);\n",
+      "answer": [
+        "0",
+        "1 2 3 4 ",
+        "4 4 4 4",
+        "5"
+      ],
+      "rightAnswer":1
+    }
+  ]
+}
