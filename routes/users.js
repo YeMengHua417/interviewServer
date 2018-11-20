@@ -189,8 +189,8 @@ router.get('/questions',function (req, res) {
       secureConnection: true, // 使用了 SSL
       auth: {
         user: 'april1984417@163.com',
-        // 这里密码不是qq密码，是你设置的smtp授权码
-        pass: 'Ros818930',
+        // 这里密码就是163的密码
+        pass: '＊＊＊＊＊',
       }
     });
 
